@@ -27,7 +27,7 @@ spec:
       containers:
       - env:
         - name: DT_CUSTOM_PROP
-          value: version=0.1.0 revision=1 releasename=sockshop-staging-carts keptn_project=sockshop
+          value: version=0.1.0 revision=2 releasename=sockshop-staging-carts keptn_project=sockshop
             keptn_service=carts keptn_stage=staging keptn_deployment=primary
         - name: POD_NAME
           valueFrom:
@@ -70,11 +70,5 @@ spec:
           initialDelaySeconds: 60
           periodSeconds: 10
           timeoutSeconds: 15
-        resources:
-          limits:
-            cpu: "1"
-            memory: 2Gi
-          requests:
-            cpu: 500m
-            memory: 1Gi
+        resources: {}
 status: {}
